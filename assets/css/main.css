@@ -1,0 +1,428 @@
+/* =============== shared ================= */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Lato, sans-serif;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col{
+    float: left;
+}
+
+.one-col{
+    width: 100%;
+}
+.two-col{
+    width: 50%;
+}
+
+.three-col{
+    width: 33.33333%;
+}
+
+.two-third{
+    width: 66.66666%;
+}
+
+.four-col{
+    width: 25%;
+}
+/* =============== shared ================= */
+
+
+/* =============== header ================= */
+#header{
+    height: 44px;
+    background: rgba(224, 224, 209, 0.9);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#header .nav-bar,
+#header .nav-search{
+    float: right;
+}
+
+#header .nav-search-btn{
+    line-height: 44px;
+    color: #777;
+    padding: 0 16px;
+}
+
+#header .nav-bar-btn{
+    background: #000;
+    line-height: 44px;
+    color: #fff;
+    padding: 0 16px;
+}
+
+#header .nav-search-btn:hover{
+    background: #f44336;
+    color: #fff;
+    cursor: pointer;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav li{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 44px;
+}
+
+#nav li a{
+    text-decoration: none;
+    color: #777;
+    display: block;
+    text-transform: uppercase;
+    padding: 0 16px;
+}
+
+#nav li:hover a{
+    background: #ccc;
+    color: #000;
+}
+/* =============== header ================= */
+
+
+/* =============== slider ================= */
+#slider{
+    position: relative;
+    min-height: 400px;
+    background: url('../img/slider.jpg') 
+    center / cover no-repeat;
+    opacity: 0.75;
+}
+
+#slider .slider-logo,
+#slider .s-slider-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 13px 13px;
+    background: #000;
+    letter-spacing: 5px;
+    font-weight: 400;
+    word-spacing: 5px;
+}
+/* =============== slider ================= */
+
+
+/* =============== content ================= */
+.section-ct{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 74px 20px;
+}
+
+.section-ct .section-hd{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #777;
+    text-align: center;
+    padding-bottom: 9px;
+}
+
+.section-ct .section-slogan{
+    font-size: 15px;
+    padding-top: 16px;
+    color: #777;
+    font-style: italic;
+    text-align: center;
+}
+
+/* about-section */
+/* about-me */
+#about-section .section-ct .section-dct{
+    font-size: 15px;
+    padding-top: 25px;
+    color: #777;
+    line-height: 1.8;
+}
+
+#about-section .about-me{
+    padding: 44px 0;
+}
+
+#about-section .about-me .my-icon{
+    margin-right: 16px;
+}
+
+#about-section .about-me .my-name{
+    text-align: center;
+    padding-bottom: 44px;
+    color: #777;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#about-section .about-me .my-img{
+    width: 100%;
+    padding: 0 20px;
+    opacity: 0.6;
+}
+
+#about-section .about-me .my-img:hover{
+    opacity: 1;
+}
+
+#about-section .about-my-self{
+    font-size: 15px;
+    color: #777;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+/* about-me */
+
+/* about-my-skill */
+#about-section .about-my-skill .about-skill{
+    text-align: center;
+    color: #777;
+    font-size: 18px;
+    padding-bottom: 44px;
+}
+
+#about-section .about-my-skill .name-skill{
+    letter-spacing: 10px;
+    color: #777;
+}
+
+#about-section .about-my-skill i[class*="fa"]{
+    display: inline-block;
+    width: 30px;
+}
+
+#about-section .about-my-skill .skill-bar{
+    background: #f1f1f1;
+    width: 100%;
+    height: 35px;
+    margin: 15px 0;
+}
+
+#about-section .about-my-skill div[class*="skill-percent"]{
+    background: #616161;
+    width: var(--percent);
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+}
+/* about-my-skill */
+
+/* about-achivement */
+#about-section .about-achivements{
+    background: #616161;
+}
+
+#about-section .about-achivements .achivement-item{
+    text-align: center;
+    padding: 36px 0;
+    color: #fff;
+}
+
+#about-section .about-achivements .achivement-number{
+    font-size: 24px;
+    line-height: 1.8;
+}
+
+.about-achivements-slider{
+    min-height: 400px;
+    position: relative;
+    background: url('../img/portfolio.jpg')
+    center / cover no-repeat;
+    opacity: 0.75;
+}
+
+.about-achivements-slider .about-achivements-slider-ct{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 36px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+/* about-achivement */
+/* about-section */
+
+/* my-work-secion */
+#my-work-section .my-work-album{
+    padding-top: 50px;
+}
+
+#my-work-section .images-list .image-item{
+    padding: 0 8px 8px;
+}
+
+#my-work-section .images-list .document-image{
+    width: 100%;
+}
+
+#my-work-section .images-list .document-image:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#my-work-section .load-more{
+    text-align: center;
+    padding: 50px 0;
+}
+
+#my-work-section .load-more .load-more-btn{
+    padding: 16px 25px;
+    border: none;
+}
+
+#my-work-section .load-more .load-more-btn:hover{
+    background: #ccc;
+    cursor: pointer;
+}
+/* my-work-secion */
+
+/* contact-section */
+#content .contact-slider{
+    min-height: 400px;
+    background: url('../img/contact-img.jpg')
+    center / cover no-repeat;
+    opacity: 0.75;
+    position: relative;
+}
+
+#content .contact-slider .contact-slider-ct{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+#contact-section .contact-ct{
+    padding: 46px 0 100px;
+}
+
+#contact-section .contact-img{
+    width: 90%;
+    border-radius: 4px;
+}
+
+#contact-section .contact-info{
+    color: #777;
+    padding: 8px 30px 8px 0;
+    font-size: 18px;
+}
+
+#contact-section .contact-info i[class*="contact"]{
+    display: inline-block;
+    width: 40px;
+    font-size: 24px;
+    padding: 8px 0;
+}
+
+#contact-section .contact-info .contact-note{
+    padding: 16px 0;
+    font-size: 15px;
+}
+
+#contact-section .contact-form{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+#contact-section .contact-form .form-item{
+    padding: 0 8px 8px;
+}
+
+#contact-section .contact-form .form-control{
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+}
+
+#contact-section .send-message-btn{
+    float: right;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 16px;
+    border: none;
+    margin-top: 8px;
+}
+#contact-section .send-message-btn:hover{
+    background: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+/* contact-section */
+/* =============== content ================= */
+
+
+/* =============== footer ================= */
+#footer{
+    background: #000;
+    padding: 64px 0;
+    text-align: center;
+    color: #fff;
+    opacity: 0.6;
+}
+
+#footer:hover{
+    background: #000;
+    opacity: 1;
+}
+
+#footer .footer-ct .to-the-top-btn{
+    background: #fff;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    padding: 12px 16px;
+    font-size: 15px;
+}
+
+#footer .footer-ct .to-the-top-btn:hover{
+    background: #ccc;
+    cursor: pointer;
+}
+
+#footer .socials-list .fab{
+    color: #fff;
+    padding: 32px 0;
+    font-size: 24px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+#footer .socials-list .fab:hover{
+    color: #777;
+}
+
+#footer .license a{
+    color: #fff;
+}
+/* =============== footer ================= */
