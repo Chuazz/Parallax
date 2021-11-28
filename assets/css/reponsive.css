@@ -1,0 +1,70 @@
+/* ================= PC ==================== */
+@media (min-width: 64em){
+    #header .nav-bar-btn{
+        display: none;
+    }
+
+    #slider .s-slider-logo{
+        display: none;
+    }
+
+    .section-ct{
+        max-width: 980px;
+    }
+}
+/* ================= PC ==================== */
+
+/* =============== Tablet ================== */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    #header .nav-bar-btn{
+        display: none;
+    }
+
+    #slider .s-slider-logo{
+        display: none;
+    }
+}
+/* =============== Tablet ================== */
+
+/* =============== Mobile ================== */
+@media (max-width: 46.1875em){
+    .s-one-col{
+        width: 100%;
+    }
+
+    #header .nav-search{
+        display: none;
+    }
+
+    #header .nav-bar-btn{
+        display: inline-block;
+    }
+
+    #nav a[href*="section"]{
+        display: none;
+    }
+
+    #slider .slider-logo{
+        display: none;
+    }
+
+    #slider .s-slider-logo{
+        display: inline-block;
+        letter-spacing: 3px;
+        word-spacing: 0;
+    }
+
+    #about-section .about-me .about-my-self{
+        display: none;
+    }
+
+    #contact-section .contact-img{
+        width: 100%;
+    }
+
+    #footer .socials-list .fab{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+/* =============== Mobile ================== */
